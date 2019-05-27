@@ -21,3 +21,45 @@
   - 字符串：""
 
 # 控制流程
+## 循环
+go 只有一种循环结构：`for` 循环
+```go
+sum := 0
+for i := 0; i < 10; i++ {
+    sum += i
+}   
+for ; sum < 1000; {
+    sum += sum
+}
+for sum < 1000 {
+    sum += sum
+}
+for {
+}
+```
+初始化语句中声明的变量作用域只存在 `for` 中
+
+## 条件
+```go
+if x < 0 {
+    return sqrt(-x) + "i"
+}
+if v := math.Pow(x, n); v < lim {
+    return v
+}
+```
+初始化语句中声明的变量作用域只存在 `if` 中
+
+```go
+switch os := runtime.GOOS; os {
+case "darwin":
+    fmt.Println("OS X.")
+case "linux":
+    fmt.Println("Linux.")
+default:
+    fmt.Printf("%s.\n", os)
+}
+```
+
+## 推迟
+`defer`
