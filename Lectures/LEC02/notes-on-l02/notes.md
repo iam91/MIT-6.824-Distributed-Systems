@@ -1,4 +1,5 @@
 - [linux线程间通信及同步机制总结](https://blog.csdn.net/a987073381/article/details/52029070)
+- [Linux 线程挂起与唤醒功能 实例](https://blog.csdn.net/waldmer/article/details/23422943)
 - [RPC](https://www.ibm.com/support/knowledgecenter/en/ssw_aix_71/com.ibm.aix.progcomc/ch8_rpc.htm)
 
 ## 线程
